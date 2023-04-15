@@ -1,11 +1,16 @@
+
+
 const Products = () => {
+
+
     return (
         <>
-        <div>
-            Products goes here
+        <div className="container">
+        Products pages goes here
         </div>
         </>
     )
 }
+            
 
 export { Products }

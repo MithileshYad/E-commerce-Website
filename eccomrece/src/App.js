@@ -10,10 +10,16 @@ import { Cart } from './pages/cart';
 import { NotFound } from './pages/not-found';
 
 
+
 function App() {
+  // const navigate = useNavigate();
+  // const onSearch= (searchQuery) =>{
+  //   navigate(`/?${createSearchParams({ q: searchQuery })}`)
+  // }
+
   return (
     <>
-      <NavBar/>
+      <NavBar onSearch={onsearch} cartItemCount={2}/>
       
       <Routes>
         <Route path ="/" element={<Products/>}/>
