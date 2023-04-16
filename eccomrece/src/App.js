@@ -12,10 +12,11 @@ import { NotFound } from './pages/not-found';
 
 
 function App() {
-  // const navigate = useNavigate();
-  // const onSearch= (searchQuery) =>{
-  //   navigate(`/?${createSearchParams({ q: searchQuery })}`)
-  // }
+  
+ const navigate = useNavigate();
+  const onSearch= (searchQuery) =>{
+    navigate(`/?${createSearchParams({ q: searchQuery })}`)
+  }
 
   return (
     <>
