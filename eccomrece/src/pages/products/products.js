@@ -36,7 +36,7 @@ const Products = () => {
     return (
         <>
         <div className="container">
-        <div className="products my-5">
+            <div className="products my-5">
                     <div className="grid">
                         {loading ? (
                             <div className="loader" />
@@ -47,7 +47,7 @@ const Products = () => {
                         )}
                     </div>
                 </div>
-        </div>
+            </div>
         </>
     )
 }

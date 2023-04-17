@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <NavBar onSearch={onsearch} cartItemCount={2}/>
+      <NavBar onSearch={onSearch} cartItemCount={2}/>
       
       <Routes>
         <Route path ="/" element={<Products/>}/>
