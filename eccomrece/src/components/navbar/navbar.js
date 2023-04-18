@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
 
-const NavBar = ({onSearch, cartItemCount}) => {
+const NavBar = ({ onSearch, cartItemCount }) => {
 
     const [searchQuery, setSearchQuery] = useState('');
 
@@ -12,7 +12,7 @@ const NavBar = ({onSearch, cartItemCount}) => {
         setSearchQuery('')
     }
 
-    return(
+    return (
         <div className="wrapper">
             <header className="container">
                 <div className="header py-2">
@@ -35,7 +35,7 @@ const NavBar = ({onSearch, cartItemCount}) => {
                                 </button>
                             </form>
                         </div>
-                        <Link to="/cart" className="link headerCart"> 
+                        <Link to="/cart" className="link headerCart">
                             <img className="cartImg" src="/cart.svg" alt="cart" />
                             {cartItemCount > 0 && (
                                 <div className="cartCounter">{cartItemCount <= 9 ? cartItemCount : "9+"}</div>

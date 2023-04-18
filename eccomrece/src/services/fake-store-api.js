@@ -1,3 +1,5 @@
+//import axios from 'axios';
+
 const FakeStoreApi = {
     fetchAllProducts: async()=>{
         const res = await fetch('https://fakestoreapi.com/products');
